@@ -1,0 +1,22 @@
+{
+    "cep": {
+      "base_url": "https://viacep.com.br",
+      "endpoint": "/ws/$$cep/$$format/",
+      "post_fields": {
+        "api_key": "API1_KEY"
+      },
+      "retrieve_field": [
+        "API1_RF1"
+      ]
+    },
+    "api2": {
+        "base_url": "https://api2.example.com",
+        "endpoint": "/api2/endpoint",
+        "post_fields": {
+          "api_key": "API2_KEY"
+        },
+        "retrieve_field": [
+          "API1_RF2"
+        ]
+      }
+  }
