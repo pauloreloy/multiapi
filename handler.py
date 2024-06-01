@@ -1,5 +1,6 @@
-from classes.APIClient import APIClient
+
 import json
+from classes.APIClient import APIClient
 
 if __name__ == "__main__":
     api = APIClient("cep")
@@ -7,8 +8,8 @@ if __name__ == "__main__":
         "cep": "13025085",
         "format": "json"
     }
-    api.format_endpoint(data)
     
+    api.format_endpoint(data)
     try:
         api_response = api.call_endpoint()
         if(api_response.status_code == 200):
